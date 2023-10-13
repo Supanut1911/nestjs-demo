@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  nest_demo_app:
+    container_name: nest_demo_app
+    build: .
+    command: npm run start:prod
+    ports:
+      - 3000:3000
+    restart: unless-stopped

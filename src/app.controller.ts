@@ -14,7 +14,7 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get()
+  @Get('/test')
   getTest(): TestType {
     return {
       message: 'test',
